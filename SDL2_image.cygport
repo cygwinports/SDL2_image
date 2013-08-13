@@ -1,0 +1,24 @@
+NAME="SDL2_image"
+VERSION=2.0.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="SDL image loading library"
+DESCRIPTION="This is a simple library to load images of various formats as
+SDL surfaces.  This library supports BMP, PNM (PPM/PGM/PBM), XPM, LBM,
+PCX, GIF, JPEG, PNG, TGA, TIFF, and WEBP formats."
+HOMEPAGE="http://www.libsdl.org/projects/SDL_image/"
+SRC_URI="${HOMEPAGE}/release/${NAME}-${VERSION}.tar.gz"
+
+PKG_NAMES="lib${NAME}2.0_0 lib${NAME}-devel"
+libSDL2_image2_0_0_CONTENTS='usr/bin/cygSDL2_image-2-0-0.dll usr/share/doc/'
+libSDL2_image_devel_CONTENTS='usr/include/ usr/lib/'
+
+NO_AUTOHEADER=1
+CYGCONF_ARGS="
+	--disable-jpg-shared
+	--disable-png-shared
+	--disable-tif-shared
+	--disable-webp-shared
+"
+
+KEEP_LA_FILES="none"
