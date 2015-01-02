@@ -1,6 +1,6 @@
 NAME="SDL2_image"
 VERSION=2.0.0
-RELEASE=2
+RELEASE=3
 CATEGORY="Libs"
 SUMMARY="SDL image loading library"
 DESCRIPTION="This is a simple library to load images of various formats as
