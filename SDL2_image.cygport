@@ -1,5 +1,5 @@
 NAME="SDL2_image"
-VERSION=2.0.1
+VERSION=2.0.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="SDL image loading library"
